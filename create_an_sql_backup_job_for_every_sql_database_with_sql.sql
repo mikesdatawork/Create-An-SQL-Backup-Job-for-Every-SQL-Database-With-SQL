@@ -1,25 +1,3 @@
-![MIKES DATA WORK GIT REPO](https://raw.githubusercontent.com/mikesdatawork/images/master/git_mikes_data_work_banner_01.png "Mikes Data Work")        
-
-# Create An SQL Backup Job for Every SQL Database With SQL
-**Post Date: June 9, 2006**        
-
-
-
-## Contents    
-- [About Process](##About-Process)  
-- [SQL Logic](#SQL-Logic)  
-- [Author](#Author)  
-- [License](#License)       
-
-## About-Process
-
-<p>Create a backup job for every database. these are native backups to e:\backup\ drive, using a .txt ouput file to d:\backupreport
-create a backup job for every database (using cursors of course)
-these are native backups to e:\backup\ drive, using a .txt ouput file to d:\backupreport</p>      
-
-
-## SQL-Logic
-```SQL
 declare @mydb varchar(60)
 declare GetDBname cursor read_only
 for
@@ -115,19 +93,3 @@ end
 close GetDBname
 deallocate GetDBname
 go
-```
-
-[![WorksEveryTime](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://shitday.de/)
-
-## Author
-
-[![Gist](https://img.shields.io/badge/Gist-MikesDataWork-<COLOR>.svg)](https://gist.github.com/mikesdatawork)
-[![Twitter](https://img.shields.io/badge/Twitter-MikesDataWork-<COLOR>.svg)](https://twitter.com/mikesdatawork)
-[![Wordpress](https://img.shields.io/badge/Wordpress-MikesDataWork-<COLOR>.svg)](https://mikesdatawork.wordpress.com/)
-
-    
-## License
-[![LicenseCCSA](https://img.shields.io/badge/License-CreativeCommonsSA-<COLOR>.svg)](https://creativecommons.org/share-your-work/licensing-types-examples/)
-
-![Mikes Data Work](https://raw.githubusercontent.com/mikesdatawork/images/master/git_mikes_data_work_banner_02.png "Mikes Data Work")
-
